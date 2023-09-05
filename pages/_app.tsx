@@ -1,9 +1,10 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import { extendTheme } from '@chakra-ui/react';
+import { appWithTranslation } from 'next-i18next'
 import type { AppProps } from 'next/app';
 
 const colors = {
-  main: "#DA3F5E",
+  main: "#e95a34",
   input: "#975F6A"
 }
 
@@ -17,4 +18,4 @@ const ThreadsDownloader = ({Component, pageProps}: AppProps) => {
   );
 };
 
-export default ThreadsDownloader;
+export default appWithTranslation(ThreadsDownloader);

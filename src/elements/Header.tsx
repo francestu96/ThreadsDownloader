@@ -5,6 +5,7 @@ import NextLink from 'next/link'
 import { ISubNav } from './SubNav';
 import Logo from './Logo';
 import NavItem from './NavItem';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const NAV_LINKS: ISubNav[] = [
   { label: 'Home', href: '/' },
@@ -38,16 +39,19 @@ const Header = () => {
       <Flex justify="space-between" display={['none', 'none', 'none','flex']}>
         <Logo />
         <HStack gap={'15px'} alignItems="center">
-          {NAV_LINKS.map((link) => (
-            <NavItem key={`link-${link.label}`} {...link} />
-          ))}
+          <HStack mr="15">
+            {NAV_LINKS.map((link) => (
+              <NavItem key={`link-${link.label}`} {...link} />
+            ))}
+          </HStack>
+          <LanguageSwitcher></LanguageSwitcher>
         </HStack>
       </Flex>
+
       <Flex align="center" justify="space-between" display={['flex', 'flex', 'flex','none']}>
         <Logo />
         <IconButton aria-label="Open Menu" size="lg" mr={2} icon={<HamburgerIcon/>} onClick={onToggle}/>
       </Flex> 
-
 
       <Slide in={isOpen} transition={{"enter": {duration: 0.5}, "exit": {duration: 0.5}}} style={{ zIndex: 10 }}>
         <Flex w='100vw' bgColor={useColorModeValue('white', 'gray.800')} h="100vh" flexDir="column">
