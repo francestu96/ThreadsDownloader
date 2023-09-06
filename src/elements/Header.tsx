@@ -1,7 +1,6 @@
-import { ChevronDownIcon, ChevronRightIcon, CloseIcon, HamburgerIcon, Icon } from '@chakra-ui/icons';
+import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
 import { Box, Flex, HStack, IconButton, useColorModeValue, VStack, useDisclosure, Text, Slide, Button, Popover, PopoverTrigger, PopoverContent, Stack, Link, Center } from '@chakra-ui/react';
 import React from 'react';
-import NextLink from 'next/link'
 import { ISubNav } from './SubNav';
 import Logo from './Logo';
 import NavItem from './NavItem';
@@ -39,12 +38,12 @@ const Header = () => {
       <Flex justify="space-between" display={['none', 'none', 'none','flex']}>
         <Logo />
         <HStack gap={'15px'} alignItems="center">
-          <HStack mr="15">
+          <HStack>
             {NAV_LINKS.map((link) => (
               <NavItem key={`link-${link.label}`} {...link} />
             ))}
           </HStack>
-          <LanguageSwitcher></LanguageSwitcher>
+          <LanguageSwitcher/>
         </HStack>
       </Flex>
 
@@ -59,12 +58,10 @@ const Header = () => {
           <IconButton mt={2} mr={2} aria-label="Open Menu" size="lg" icon={<CloseIcon/>}onClick={onToggle}/>
         </Flex>
           <VStack gap={'15px'}>
-            <HStack gap={'10px'}>
-              <Button size="lg" backgroundColor="main">Sign In</Button> 
-            </HStack>
             {NAV_LINKS.map((link) => (
               <NavItem key={`link-${link.label}`} {...link} />
             ))}
+            <LanguageSwitcher/>
           </VStack>
         </Flex>   
       </Slide> 
