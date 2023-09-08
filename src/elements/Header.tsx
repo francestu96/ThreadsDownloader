@@ -16,13 +16,13 @@ const NAV_LINKS: ISubNav[] = [
       {
         label: 'Telegram',
         subLabel: 'Get support on Telegram',
-        href: 'https://t.me/',
+        href: 'https://t.me/+cQnNYlOtA8ZiYjA0',
         logo: '/telegram.png',
       },
       {
         label: 'Discord',
-        subLabel: 'Cooming soon!',
-        href: 'https://discord.com/',
+        subLabel: 'Get support on Discord',
+        href: 'https://discord.com/channels/1149786155223621693/1149786155223621696',
         logo: '/discord.png',
       },
     ],

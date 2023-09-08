@@ -8,12 +8,7 @@ const config = {
   useSystemColorMode: false,
 };
 
-const colors = {
-  main: "#e95a34",
-  input: "#975F6A"
-}
-
-const theme = extendTheme({ config, colors });
+const theme = extendTheme({ config });
 
 const ThreadsDownloader = ({Component, pageProps}: AppProps) => {
   return (
