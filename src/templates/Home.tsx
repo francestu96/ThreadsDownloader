@@ -1,14 +1,13 @@
+import Description from "elements/Description";
+import Details from "elements/Details";
 import Hero from "elements/Hero";
 
 const Home = () => {
   return (
     <>
       <Hero/>
-      {/* <HowItWorks></HowItWorks>
-      <WhyDex></WhyDex>
-      <SupportedChains></SupportedChains>
-      <Testimonials></Testimonials>
-      <Faq></Faq> */}
+      <Description/>
+      <Details/>
     </>
   );
 };

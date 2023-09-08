@@ -8,22 +8,22 @@ import LanguageSwitcher from './LanguageSwitcher';
 
 const NAV_LINKS: ISubNav[] = [
   { label: 'Home', href: '/' },
-  { label: 'F.A.Q.', href: '/#faq' },
+  { label: 'F.A.Q.', href: '/faq' },
   {
     label: 'Support',
     href: '#',
     children: [
       {
         label: 'Telegram',
-        subLabel: 'Follow us on Telegram',
+        subLabel: 'Get support on Telegram',
         href: 'https://t.me/',
         logo: '/telegram.png',
       },
       {
-        label: 'Twitter',
-        subLabel: 'Follow us on Twitter',
-        href: 'https://twitter.com/',
-        logo: '/twitter.webp',
+        label: 'Discord',
+        subLabel: 'Cooming soon!',
+        href: 'https://discord.com/',
+        logo: '/discord.png',
       },
     ],
   }
@@ -31,7 +31,6 @@ const NAV_LINKS: ISubNav[] = [
 
 const Header = () => {
   const { isOpen, onToggle } = useDisclosure();
-  const linkColor =  useColorModeValue('green.50', 'gray.900');
 
   return (
     <Box borderBottom="1px" borderBottomColor="chakra-border-color" p='10px 20%'>

@@ -13,7 +13,7 @@ import {
   HStack,
 } from '@chakra-ui/react';
 import { ReactNode } from 'react';
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaDiscord, FaTelegram } from 'react-icons/fa';
 import { BiMailSend } from 'react-icons/bi';
 import Logo from './Logo';
 
@@ -68,38 +68,29 @@ export default function Footer() {
           <Stack spacing={6}>
             <HStack>
               <Logo/>
-              <Text pt={'10px'} fontWeight='bold' fontSize={{ base: 'md', md: 'lg', lg: 'xl' }} color='main'>ThreadsDownloader</Text>
+              <Text pt={'10px'} fontWeight='bold' fontSize={{ base: 'md', md: 'lg', lg: 'xl' }} color='red.500'>ThreadsDownloader</Text>
             </HStack>
             <Text fontSize={'sm'}>
               © 2019 ThreadsDownloader. All rights reserved
             </Text>
             <Stack direction={'row'} spacing={6}>
-              <SocialButton label={'Twitter'} href={'#'}>
-                <FaTwitter />
+              <SocialButton label={'Telegram'} href={'#'}>
+                <FaTelegram />
               </SocialButton>
-              <SocialButton label={'YouTube'} href={'#'}>
-                <FaYoutube />
-              </SocialButton>
-              <SocialButton label={'Instagram'} href={'#'}>
-                <FaInstagram />
+              <SocialButton label={'Discord'} href={'#'}>
+                <FaDiscord />
               </SocialButton>
             </Stack>
           </Stack>
           <Stack align={'flex-start'}>
-            <ListHeader>Company</ListHeader>
-            <Link href={'#'}>About us</Link>
-            <Link href={'#'}>Blog</Link>
-            <Link href={'#'}>Contact us</Link>
-            <Link href={'#'}>Pricing</Link>
-            <Link href={'#'}>Testimonials</Link>
+            <ListHeader>About us</ListHeader>
+            <Link href={'#'}>Privacy Policy</Link>
+            <Link href={'#'}>Terms of Service</Link>
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Support</ListHeader>
-            <Link href={'#'}>Help Center</Link>
-            <Link href={'#'}>Terms of Service</Link>
-            <Link href={'#'}>Legal</Link>
-            <Link href={'#'}>Privacy Policy</Link>
-            <Link href={'#'}>Satus</Link>
+            <Link href={'#'}>Telegram</Link>
+            <Link href={'#'}>Discord</Link>
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Stay up to date</ListHeader>
@@ -113,7 +104,7 @@ export default function Footer() {
                 }}
               />
               <IconButton
-                bg='main'
+                bg='red.500'
                 aria-label="Subscribe"
                 icon={<BiMailSend />}
               />

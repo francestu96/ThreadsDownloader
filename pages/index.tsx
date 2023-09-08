@@ -12,7 +12,6 @@ const HomePage: NextPage = () => {
 };
 
 export async function getStaticProps(context: any) {
-  // extract the locale identifier from the URL
   const { locale } = context;
 
   return {

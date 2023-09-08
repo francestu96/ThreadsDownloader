@@ -26,42 +26,42 @@ const Hero = () => {
   };
 
   return (
-    <Flex w={'full'} h={'60vh'} backgroundImage="hero.jpg">
+    <Flex w={'full'} h={'60vh'} backgroundImage="/hero.jpg">
       <VStack w={'full'} justifyContent="center" px={useBreakpointValue({ base: 4, md: 8 })} bgGradient={'linear(to-r, blackAlpha.600, transparent)'}>
-        <Stack textAlign="center" width={["80%", "70%", "60%", "50%"]} bgColor="white" p="7" borderRadius="lg">
+        <Stack textAlign="center" width={["80%", "70%", "60%", "50%"]} bgColor="gray.200" p="7" borderRadius="lg">
           <Text color="gray.700" fontWeight={800} fontSize={["md", "2xl", "5xl"]}>
             Threads Downloader
           </Text>
           <Text color="gray.700" fontWeight={700} fontSize={["sm", "xl", "2xl"]}>
             {t("hero")}
           </Text>
-          <VStack mt="12" display={["flex", "flex", "flex", "none"]}>
+          <VStack mt="5" display={["flex", "flex", "flex", "none"]}>
             <InputGroup>
               <InputLeftElement pointerEvents='none'>
-                <Search2Icon color='gray.300' />
+                <Search2Icon/>
               </InputLeftElement>
-              <Input onChange={(e) => setUrl(e.target.value)} placeholder={t("placeholder")} fontSize="xs"/>
+              <Input onChange={(e) => setUrl(e.target.value)} placeholder={t("placeholder")} fontSize="xs" backgroundColor="gray.700"/>
             </InputGroup>
             <HStack gap="0">
-              <Select borderRightRadius="none" iconSize="0" width="unset" cursor="pointer" bgColor="blue.500" fontWeight="bold" border="unset" color="white">
-                <option style={{ color: 'black' }}>MP4</option>
-                <option style={{ color: 'black' }}>MP3</option>
+              <Select borderRightRadius="none" iconSize="0" width="unset" cursor="pointer" bgColor="messenger.700" fontWeight="400" border="unset">
+                <option style={{ backgroundColor: 'white', color: 'black' }}>MP4</option>
+                <option style={{ backgroundColor: 'white', color: 'black' }}>MP3</option>
               </Select>
-              <Button borderLeftRadius="none" bg="main" color="white" _hover={{ bg: 'whiteAlpha.500', color: "black" }} onClick={() => downloadFile(url)}>{t("download")}</Button>
+              <Button borderLeftRadius="none" bg="red.500" _hover={{ bg: 'whiteAlpha.500', color: "black" }} onClick={() => downloadFile(url)}>{t("download")}</Button>
             </HStack>
           </VStack>
-          <InputGroup mt="12" display={["none", "none", "none", "flex"]}>
+          <InputGroup mt="10" display={["none", "none", "none", "flex"]}>
             <InputLeftElement pointerEvents='none'>
-              <Search2Icon color='gray.300' />
+              <Search2Icon />
             </InputLeftElement>
-            <Input onChange={(e) => setUrl(e.target.value)} placeholder={t("placeholder")} />
+            <Input onChange={(e) => setUrl(e.target.value)} placeholder={t("placeholder")} backgroundColor="gray.700"/>
             <InputRightElement width="unset">
               <HStack gap="0">
-                <Select borderRadius="unset" iconSize="0" width="unset" cursor="pointer" bgColor="blue.500" fontWeight="bold" border="unset" color="white">
-                  <option style={{ color: 'black' }}>MP4</option>
-                  <option style={{ color: 'black' }}>JPG</option>
+                <Select borderRadius="unset" iconSize="0" width="unset" cursor="pointer" bgColor="messenger.700" fontWeight="400" border="unset">
+                  <option style={{ backgroundColor: 'white', color: 'black' }}>MP4</option>
+                  <option style={{ backgroundColor: 'white', color: 'black' }}>JPG</option>
                 </Select>
-                <Button borderLeftRadius="none" bg="main" color="white" _hover={{ bg: 'whiteAlpha.500', color: "black" }} onClick={() => downloadFile(url)}>{t("download")}</Button>
+                <Button borderLeftRadius="none" bg="red.500" _hover={{ bg: 'whiteAlpha.500', color: "black" }} onClick={() => downloadFile(url)}>{t("download")}</Button>
               </HStack>
             </InputRightElement>
           </InputGroup>
