@@ -15,16 +15,7 @@ const NavItem: FC<ISubNav> = ({ label, children, href, src }) => {
     <Popover trigger={'hover'} placement={'bottom-start'}>
       <PopoverTrigger>
         <Box>
-          <Box
-            fontSize={17}
-            fontWeight={500}
-            color={isCurrentPath ? linkActiveColor : linkColor}
-            _hover={{
-              textDecoration: 'none',
-              color: linkActiveColor,
-            }}
-            cursor="pointer"
-          >
+          <Box fontSize={17} fontWeight={500} color={isCurrentPath ? linkActiveColor : linkColor} _hover={{   textDecoration: 'none',   color: linkActiveColor, }} cursor="pointer">
             {children ? (
               <HStack gap="1">
                 <Text>{label}</Text>

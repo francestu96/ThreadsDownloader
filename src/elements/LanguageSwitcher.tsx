@@ -13,7 +13,7 @@ const ValueContainer = ({ children, ...props}: ValueContainerProps) => {
   return (
     <components.ValueContainer {...props}>
       { props.getValue()[0] 
-        ? <Image src={'/locales/' + (props.getValue()[0] as any).value + ".svg"} style={{ width: 30 }} alt={(props.getValue()[0] as any).value + " flag"}/> 
+        ? <Image src={'/locales/' + (props.getValue()[0] as any).value + ".svg"} style={{ width: 30, height: 30 }} alt={(props.getValue()[0] as any).value + " flag"}/> 
         : null 
       }
       {children}
@@ -24,7 +24,7 @@ const ValueContainer = ({ children, ...props}: ValueContainerProps) => {
 const { Option } = components;
 const IconOption = (props: any) => (
   <Option {...props}>
-    <Image src={'/locales/' + props.data.value + ".svg"} style={{ width: 30 }} alt={props.data.value + " flag"}/>
+    <Image src={'/locales/' + props.data.value + ".svg"} style={{ width: 30, height: 30 }} alt={props.data.value + " flag"}/>
   </Option>
 );
  

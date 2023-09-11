@@ -1,27 +1,42 @@
 import { Search2Icon } from "@chakra-ui/icons";
-import { Button, Flex, VStack, Stack, useBreakpointValue, Input, InputGroup, InputLeftElement, InputRightElement, HStack, Select } from "@chakra-ui/react";
+import { Button, Flex, VStack, Stack, useBreakpointValue, Input, InputGroup, InputLeftElement, InputRightElement, HStack, Select, useToast } from "@chakra-ui/react";
 import { Text } from '@chakra-ui/react'
 import { useState } from "react";
 import { useTranslation } from 'next-i18next'
 import axios from "axios";
 
 const Hero = () => {
-  const { t } = useTranslation()
+  const toast = useToast();
+  const { t } = useTranslation();
+  const [isLoading, setIsLoading] = useState<boolean>();
   const [url, setUrl] = useState<string>();
 
   async function downloadFile(url: string | undefined) {
     if(url){
-      const res = await axios.get("/api/download?url=" + url, {responseType: 'blob'});
-      const href = URL.createObjectURL(res.data);
-      
-      const link = document.createElement('a');
-      link.href = href;
-      link.setAttribute('download', res.headers['content-disposition'].split('filename=')[1] || "uname");
-      document.body.appendChild(link);
-      link.click();
-  
-      document.body.removeChild(link);
-      URL.revokeObjectURL(href);
+      try{
+        const res = await axios.get("/api/download?url=" + url, {responseType: 'blob'});
+        setIsLoading(false);
+        toast({ description: "Download in progress!", status: 'success', duration: 3000, position: "top", isClosable: true});
+
+        const href = URL.createObjectURL(res.data);
+        
+        const link = document.createElement('a');
+        link.href = href;
+        link.setAttribute('download', res.headers['content-disposition'].split('filename=')[1] || "uname");
+        document.body.appendChild(link);
+        link.click();
+    
+        document.body.removeChild(link);
+        URL.revokeObjectURL(href);
+      }
+      catch (error: any){
+        setIsLoading(false);
+        toast({ description: await error.response.data.text(), status: 'error', duration: 3000, position: "top", isClosable: true});
+      }
+    }
+    else{
+      setIsLoading(false);
+      toast({ description: "Missing URL", status: 'error', duration: 3000, position: "top", isClosable: true});
     }
   };
 
@@ -42,13 +57,7 @@ const Hero = () => {
               </InputLeftElement>
               <Input onChange={(e) => setUrl(e.target.value)} placeholder={t("HOME.HERO.PLACEHOLDER")} fontSize="xs" backgroundColor="gray.700"/>
             </InputGroup>
-            <HStack gap="0">
-              <Select borderRightRadius="none" iconSize="0" width="unset" cursor="pointer" bgColor="messenger.700" fontWeight="400" border="unset">
-                <option style={{ backgroundColor: 'white', color: 'black' }}>MP4</option>
-                <option style={{ backgroundColor: 'white', color: 'black' }}>MP3</option>
-              </Select>
-              <Button borderLeftRadius="none" bg="red.500" _hover={{ bg: 'whiteAlpha.500', color: "black" }} onClick={() => downloadFile(url)}>{t("HOME.HERO.DOWNLOAD")}</Button>
-            </HStack>
+            <Button isLoading={isLoading} borderLeftRadius="none" bg="red.500" _hover={{ bg: 'whiteAlpha.500', color: "black" }} onClick={() => { setIsLoading(true); downloadFile(url) }}>{t("HOME.HERO.DOWNLOAD")}</Button>
           </VStack>
           <InputGroup mt="10" display={["none", "none", "none", "flex"]}>
             <InputLeftElement pointerEvents='none'>
@@ -56,13 +65,7 @@ const Hero = () => {
             </InputLeftElement>
             <Input onChange={(e) => setUrl(e.target.value)} placeholder={t("HOME.HERO.PLACEHOLDER")} backgroundColor="gray.700"/>
             <InputRightElement width="unset">
-              <HStack gap="0">
-                <Select borderRadius="unset" iconSize="0" width="unset" cursor="pointer" bgColor="messenger.700" fontWeight="400" border="unset">
-                  <option style={{ backgroundColor: 'white', color: 'black' }}>MP4</option>
-                  <option style={{ backgroundColor: 'white', color: 'black' }}>JPG</option>
-                </Select>
-                <Button borderLeftRadius="none" bg="red.500" _hover={{ bg: 'whiteAlpha.500', color: "black" }} onClick={() => downloadFile(url)}>{t("HOME.HERO.DOWNLOAD")}</Button>
-              </HStack>
+              <Button isLoading={isLoading} borderLeftRadius="none" bg="red.500" _hover={{ bg: 'whiteAlpha.500', color: "black" }} onClick={() => { setIsLoading(true); downloadFile(url) }}>{t("HOME.HERO.DOWNLOAD")}</Button>
             </InputRightElement>
           </InputGroup>
         </Stack>

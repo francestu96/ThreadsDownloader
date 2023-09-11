@@ -4,6 +4,30 @@
             "TITLE": "¡Descarga todos los contenidos de tus Threads en tu formato favorito!",
             "PLACEHOLDER": "Introducir la URL del post...",
             "DOWNLOAD": "Descargar"
+        },
+        "DESCRIPTION": {
+
+        },
+        "DETAILS": {
+
         }
+    },
+    "FAQ": {
+
+    },
+    "PRIVACY-POLICY": {
+        "HEAD": "Privacy Policy",
+        "HEAD-TEXT": "Please take a moment to familiarize yourself with our privacy practices and contact us if you have any questions.",
+        "PERS-ID": "Personal identification information",
+        "PERS-ID-TEXT": "We may collect personal identification information from Users in a variety of ways, including, but not limited to, when Users visit our site, fill out a form, and in connection with other activities, services, features or resources we make available on our Site. Users may visit our Site anonymously. We will collect personal identification information from Users only if they voluntarily submit such information to us. Users can always refuse to supply personally identification information, except that it may prevent them from engaging in certain Site related activities.",
+        "NON-PERS-ID": "Non-personal identification information",
+        "NON-PERS-ID-TEXT": "We may collect non-personal identification information about Users whenever they interact with our Site. Non-personal identification information may include the browser name, the type of computer and technical information about Users means of connection to our Site, such as the operating system and the Internet service providers utilized and other similar information. We may collect non-personal identification information about Users whenever they interact with our Site. Non-personal identification information may include the browser name, the type of computer and technical information about Users means of connection to our Site, such as the operating system and the Internet service providers utilized and other similar information.",
+        "COOKIES": "Web browser cookies",
+        "COOKIES-TEXT": "We may collect non-personal identification information about Users whenever they interact with our Site. Non-personal identification information may include the browser name, the type of computer and technical information about Users means of connection to our Site, such as the operating system and the Internet service providers utilized and other similar information. We may collect non-personal identification information about Users whenever they interact with our Site. Non-personal identification information may include the browser name, the type of computer and technical information about Users means of connection to our Site, such as the operating system and the Internet service providers utilized and other similar information."
+    },
+    "TERMS-OF-SERVICE": {
+        "HEAD": "Terms of Service",
+        "HEAD-TEXT-1": "Set out below are the terms and conditions of your use of, and access to, our website. Please read them carefully, as they impose responsibilities on you in respect of your use of TikTok Video Downloader.",
+        "HEAD-TEXT-2": "By accessing this web site, you are agreeing to be bound by these web site Terms and Conditions of Use, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this web site are protected by applicable copyright and trademark law."
     }
 }
