@@ -1,5 +1,9 @@
 { 
-    "hero": "Download all your Threads contents in your favorite format!",
-    "placeholder": "Enter post URL...", 
-    "download": "Download"  
+    "HOME": {
+        "HERO": {
+            "TITLE": "Download all your Threads contents in your favorite format!",
+            "PLACEHOLDER": "Enter post URL...",
+            "DOWNLOAD": "Download"
+        }
+    }
 }

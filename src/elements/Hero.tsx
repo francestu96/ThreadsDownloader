@@ -33,35 +33,35 @@ const Hero = () => {
             Threads Downloader
           </Text>
           <Text color="gray.700" fontWeight={700} fontSize={["sm", "xl", "2xl"]}>
-            {t("hero")}
+            {t("HOME.HERO.TITLE")}
           </Text>
           <VStack mt="5" display={["flex", "flex", "flex", "none"]}>
             <InputGroup>
               <InputLeftElement pointerEvents='none'>
                 <Search2Icon/>
               </InputLeftElement>
-              <Input onChange={(e) => setUrl(e.target.value)} placeholder={t("placeholder")} fontSize="xs" backgroundColor="gray.700"/>
+              <Input onChange={(e) => setUrl(e.target.value)} placeholder={t("HOME.HERO.PLACEHOLDER")} fontSize="xs" backgroundColor="gray.700"/>
             </InputGroup>
             <HStack gap="0">
               <Select borderRightRadius="none" iconSize="0" width="unset" cursor="pointer" bgColor="messenger.700" fontWeight="400" border="unset">
                 <option style={{ backgroundColor: 'white', color: 'black' }}>MP4</option>
                 <option style={{ backgroundColor: 'white', color: 'black' }}>MP3</option>
               </Select>
-              <Button borderLeftRadius="none" bg="red.500" _hover={{ bg: 'whiteAlpha.500', color: "black" }} onClick={() => downloadFile(url)}>{t("download")}</Button>
+              <Button borderLeftRadius="none" bg="red.500" _hover={{ bg: 'whiteAlpha.500', color: "black" }} onClick={() => downloadFile(url)}>{t("HOME.HERO.DOWNLOAD")}</Button>
             </HStack>
           </VStack>
           <InputGroup mt="10" display={["none", "none", "none", "flex"]}>
             <InputLeftElement pointerEvents='none'>
               <Search2Icon />
             </InputLeftElement>
-            <Input onChange={(e) => setUrl(e.target.value)} placeholder={t("placeholder")} backgroundColor="gray.700"/>
+            <Input onChange={(e) => setUrl(e.target.value)} placeholder={t("HOME.HERO.PLACEHOLDER")} backgroundColor="gray.700"/>
             <InputRightElement width="unset">
               <HStack gap="0">
                 <Select borderRadius="unset" iconSize="0" width="unset" cursor="pointer" bgColor="messenger.700" fontWeight="400" border="unset">
                   <option style={{ backgroundColor: 'white', color: 'black' }}>MP4</option>
                   <option style={{ backgroundColor: 'white', color: 'black' }}>JPG</option>
                 </Select>
-                <Button borderLeftRadius="none" bg="red.500" _hover={{ bg: 'whiteAlpha.500', color: "black" }} onClick={() => downloadFile(url)}>{t("download")}</Button>
+                <Button borderLeftRadius="none" bg="red.500" _hover={{ bg: 'whiteAlpha.500', color: "black" }} onClick={() => downloadFile(url)}>{t("HOME.HERO.DOWNLOAD")}</Button>
               </HStack>
             </InputRightElement>
           </InputGroup>

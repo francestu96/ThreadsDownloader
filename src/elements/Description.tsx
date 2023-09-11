@@ -14,7 +14,7 @@ const Description = () => {
             Threads Downloader
           </Text>
           <Text fontWeight={700} fontSize={["sm", "xl", "2xl"]}>
-            {t("hero")}
+            {t("HOME.HERO.TITLE")}
           </Text>
         </Stack>
         <SimpleGrid minChildWidth={["50%", "40%", "35%", "30%"]} spacing="2" width={["95%", "90%", "85%", "80%"]} mt={["0", "5", "7", "10"]} fontSize={["xs", "sm", "md", "md"]} textAlign="center">

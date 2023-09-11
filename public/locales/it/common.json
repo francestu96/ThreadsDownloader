@@ -1,5 +1,9 @@
 { 
-    "hero": "Scarica tutti i contenuti Threads nel tuo formato preferito!",
-    "placeholder": "Inserisci l'URL del post...", 
-    "download": "Scarica" 
+    "HOME": {
+        "HERO": {
+            "TITLE": "Scarica tutti i contenuti Threads nel tuo formato preferito!",
+            "PLACEHOLDER": "Inserisci l'URL del post...",
+            "DOWNLOAD": "Scarica"
+        }
+    }
 }
