@@ -110,5 +110,9 @@
         "LINKS-TEXT":"ThreadsBro.link non ha esaminato tutti i siti collegati al suo sito web e non è responsabile dei contenuti di tali siti collegati. L'inclusione di qualsiasi collegamento non implica l'approvazione da parte di ThreadsBro.link del sito. L'uso di qualsiasi sito web collegato è a proprio rischio dell'utente.",
         "SITE-TERMS":"Modifiche ai Termini d'uso del sito",
         "SITE-TERMS-TEXT":"ThreadsBro.link può modificare questi termini d'uso per il suo sito web in qualsiasi momento e senza preavviso. Utilizzando questo sito web, accetti di essere vincolato dalla versione attuale di questi Termini e condizioni d'uso del sito web. Termini e condizioni generali applicabili all'uso di un sito web."
+    },
+    "META":{
+      "DESCRIPTION": "ThreadsBro: Download video e immagini da Threads in modo rapido e sicuro. Senza registrazione, compatibile con tutti i dispositivi. Inizia subito!",
+      "KEYWORDS": ""
     }
 }

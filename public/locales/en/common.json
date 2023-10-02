@@ -110,5 +110,9 @@
         "LINKS-TEXT":"ThreadsBro.link has not reviewed all of the sites linked to its Internet web site and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by ThreadsBro.link of the site. Use of any such linked web site is at the user's own risk.",
         "SITE-TERMS":"Site Terms of Use Modifications",
         "SITE-TERMS-TEXT":"ThreadsBro.link may revise these terms of use for its web site at any time without notice. By using this web site you are agreeing to be bound by the then current version of these Terms and Conditions of Use. General Terms and Conditions applicable to Use of a Web Site."
+    },
+    "META":{
+      "DESCRIPTION": "ThreadsBro: download videos and images from Threads quickly and securely. Without registration, compatible with all devices. Get started now!",
+      "KEYWORDS": ""
     }
 }
