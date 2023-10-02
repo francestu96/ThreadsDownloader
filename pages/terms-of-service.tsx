@@ -21,61 +21,61 @@ const TermsOfServicePage: NextPage = () => {
             {t("TERMS-OF-SERVICE.HEAD-TEXT-2")}
           </Text>
           <Heading as="h6" size="lg" mt="10">
-            Use licence
+          {t("TERMS-OF-SERVICE.LICENCE")}
           </Heading>
           <Text>
-            Permission is granted to temporarily download one copy of the materials (information or software) on ThreadsMate.com's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+          {t("TERMS-OF-SERVICE.LICENCE-TEXT")}
           </Text>
           <List spacing={3}>
             <ListItem>
               <ListIcon as={CheckCircleIcon} color='green.500' />
-              Modify or copy the materials;
+              {t("TERMS-OF-SERVICE.CHECK1")}
             </ListItem>
             <ListItem>
               <ListIcon as={CheckCircleIcon} color='green.500' />
-              Use the materials for any commercial purpose, or for any public display (commercial or non-commercial);
+              {t("TERMS-OF-SERVICE.CHECK2")}
             </ListItem>
             <ListItem>
               <ListIcon as={CheckCircleIcon} color='green.500' />
-              Remove any copyright or other proprietary notations from the materials;
+              {t("TERMS-OF-SERVICE.CHECK3")}
             </ListItem>
             <ListItem>
               <ListIcon as={CheckCircleIcon} color='green.500' />
-              Transfer the materials to another person or "mirror" the materials on any other server
+              {t("TERMS-OF-SERVICE.CHECK4")}
             </ListItem>
           </List>
           <Text>
-            We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained.
+          {t("TERMS-OF-SERVICE.LICENCE-TEXT")}
           </Text>
           <Heading as="h6" size="lg" mt="10">
-            Disclaimer
+          {t("TERMS-OF-SERVICE.DISCLAIMER")}
           </Heading>
           <Text>
-            The materials on ThreadsMate.com's website are provided "as is". ThreadsMate.com makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. Further, ThreadsMate.com does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its Internet web site or otherwise relating to such materials or on any sites linked to this site.
+          {t("TERMS-OF-SERVICE.DISCLAIMER-TEXT")}.
           </Text>
           <Heading as="h6" size="lg" mt="10">
-            Limitations
+          {t("TERMS-OF-SERVICE.LIMIT")}
           </Heading>
           <Text>
-            In no event shall ThreadsMate.com or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption,) arising out of the use or inability to use the materials on ThreadsMate.com's Internet site, even if ThreadsMate.com or a ThreadsMate.com authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.
+          {t("TERMS-OF-SERVICE.LIMIT-TEXT")}
           </Text>
           <Heading as="h6" size="lg" mt="10">
-            Revisions and Errata
+          {t("TERMS-OF-SERVICE.REV-ERRATA")}
           </Heading>
           <Text>
-            The materials appearing on ThreadsMate.com's website could include technical, typographical, or photographic errors. ThreadsMate.com.com does not warrant that any of the materials on its web site are accurate, complete, or current. ThreadsMate.com may make changes to the materials contained on its web site at any time without notice. ThreadsMate.com does not, however, make any commitment to update the materials.
+          {t("TERMS-OF-SERVICE.REV-ERRATA-TEXT")}
           </Text>
           <Heading as="h6" size="lg" mt="10">
-            Links
+          {t("TERMS-OF-SERVICE.LINKS")}
           </Heading>
           <Text>
-            ThreadsMate.com has not reviewed all of the sites linked to its Internet web site and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by ThreadsMate.com of the site. Use of any such linked web site is at the user's own risk.
+          {t("TERMS-OF-SERVICE.LINKS-TEXT")}
           </Text>
           <Heading as="h6" size="lg" mt="10">
-            Site Terms of Use Modifications
+          {t("TERMS-OF-SERVICE.SITE-TERMS")}
           </Heading>
           <Text>
-            ThreadsMate.com may revise these terms of use for its web site at any time without notice. By using this web site you are agreeing to be bound by the then current version of these Terms and Conditions of Use. General Terms and Conditions applicable to Use of a Web Site.
+          {t("TERMS-OF-SERVICE.SITE-TERMS-TEXT")}
           </Text>
         </VStack>
       </Flex>

@@ -12,37 +12,37 @@ const Details = () => {
         <Stack fontSize={["md", "lg", "xl", "xl"]}>
           <VStack mb="5" textAlign="center">
             <Text color="gray.700" fontWeight={500} fontSize={["xl", "xl", "2xl", "2xl"]}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            {t("HOME.DETAILS.BENVENUTI")}
             </Text>
             <Text color="gray.700">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+            {t("HOME.DETAILS.BENVENUTI-TEXT")}
             </Text>
           </VStack>
           <VStack mb="5" alignItems="start">
             <Text color="gray.700" fontWeight={500}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            {t("HOME.DETAILS.COME-FARE")}
             </Text>
             <Text color="gray.700">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            {t("HOME.DETAILS.COME-FARE-TEXT")}
             </Text>
           </VStack>
           <VStack mb="5" alignItems="start">
             <Box color="gray.700" fontWeight={500}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            {t("HOME.DETAILS.COMODITA")}
               <Box boxSize={[10, 12, 15, 20]} float="left" margin="20px 20px 0px 20px">
                 <BsChatRightText size="auto" fill="#E53E3E"/>
               </Box>
               <Text color="gray.700" fontWeight={400}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+              {t("HOME.DETAILS.COMODITA-TEXT")}
               </Text>
             </Box>
           </VStack>
           <VStack alignItems="start">
             <Text color="gray.700" fontWeight={500}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            {t("HOME.DETAILS.DOWN-TIP")}
             </Text>
             <Text color="gray.700">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            {t("HOME.DETAILS.DOWN-TIP-TEXT")}
             </Text>
           </VStack>
         </Stack>

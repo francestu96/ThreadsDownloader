@@ -57,7 +57,7 @@ const Hero = () => {
               </InputLeftElement>
               <Input onChange={(e) => setUrl(e.target.value)} placeholder={t("HOME.HERO.PLACEHOLDER")} fontSize="xs" backgroundColor="gray.700"/>
             </InputGroup>
-            <Button isLoading={isLoading} borderLeftRadius="none" bg="red.500" _hover={{ bg: 'whiteAlpha.500', color: "black" }} onClick={() => { setIsLoading(true); downloadFile(url) }}>{t("HOME.HERO.DOWNLOAD")}</Button>
+            <Button isLoading={isLoading} bg="red.500" _hover={{ bg: 'whiteAlpha.500', color: "black" }} onClick={() => { setIsLoading(true); downloadFile(url) }}>{t("HOME.HERO.DOWNLOAD")}</Button>
           </VStack>
           <InputGroup mt="10" display={["none", "none", "none", "flex"]}>
             <InputLeftElement pointerEvents='none'>
