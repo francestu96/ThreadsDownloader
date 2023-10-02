@@ -68,10 +68,10 @@ export default function Footer() {
           <Stack spacing={6}>
             <HStack>
               <Logo/>
-              <Text pt={'10px'} fontWeight='bold' fontSize={{ base: 'md', md: 'lg', lg: 'xl' }} color='red.500'>ThreadsDownloader</Text>
+              <Text pt={'10px'} fontWeight='bold' fontSize={{ base: 'md', md: 'lg', lg: 'xl' }} color='red.500'>ThreadsBro</Text>
             </HStack>
             <Text fontSize={'sm'}>
-              © 2023 ThreadsDownloader. All rights reserved
+              © 2023 ThreadsBro. All rights reserved
             </Text>
             <Stack direction={'row'} spacing={6}>
               <SocialButton label={'Telegram'} href={'https://t.me/+cQnNYlOtA8ZiYjA0'}>

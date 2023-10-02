@@ -1,4 +1,4 @@
-const URL = "https://threadsdownloader.studio";
+const URL = "https://threadsbro.studio";
 
 function generateSiteMap(locales: string[]) {
     // return `<?xml version="1.0" encoding="UTF-8"?></xml>`;

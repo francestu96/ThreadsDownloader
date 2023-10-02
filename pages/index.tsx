@@ -5,7 +5,7 @@ import Home from 'templates/Home';
 
 const HomePage: NextPage = () => {
   return (
-    <Default pageName="ThreadsDownloader | Home">
+    <Default pageName="ThreadsBro | Home">
       <Home/>
     </Default>
   );

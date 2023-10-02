@@ -10,7 +10,7 @@ const config = {
 
 const theme = extendTheme({ config });
 
-const ThreadsDownloader = ({Component, pageProps}: AppProps) => {
+const ThreadsBro = ({Component, pageProps}: AppProps) => {
   return (
     <ChakraProvider resetCSS theme={theme}>
       <Component {...pageProps} />
@@ -18,4 +18,4 @@ const ThreadsDownloader = ({Component, pageProps}: AppProps) => {
   );
 };
 
-export default appWithTranslation(ThreadsDownloader);
+export default appWithTranslation(ThreadsBro);

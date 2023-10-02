@@ -8,7 +8,7 @@ const PrivacyPolicyPage: NextPage = () => {
   const { t } = useTranslation();
 
   return (
-    <Default pageName="ThreadsDownloader | Privacy Policy">
+    <Default pageName="ThreadsBro | Privacy Policy">
       <Flex justifyContent="center">
         <VStack w={["90%", "80%", "75%", "70%"]} p="10" alignItems="start">
           <Heading>

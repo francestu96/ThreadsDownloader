@@ -8,7 +8,7 @@ import { useTranslation } from 'next-i18next';
 const FaqPage: NextPage = () => {
   const { t } = useTranslation();
   return (
-    <Default pageName="ThreadsDownloader | F.A.Q.">
+    <Default pageName="ThreadsBro | F.A.Q.">
       <Flex w={'full'} h={'20vh'} backgroundImage="/faq-banner.jpg" backgroundSize="cover" justify="center" align="center">
         <Text color="white" fontWeight={600} fontSize={["md", "2xl", "5xl"]} >
         {t("FAQ.HEAD")}

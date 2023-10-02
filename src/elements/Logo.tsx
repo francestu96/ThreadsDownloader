@@ -6,7 +6,7 @@ const Logo = () => {
   return (
     <LinkBox h='45' cursor="pointer">
       <LinkOverlay as={Link} href="/">
-          <Image src='/logo.png' height={45} width={80} alt="ThreadsDownloader logo"/>
+          <Image src='/logo.png' height={45} width={80} alt="ThreadsBro logo"/>
       </LinkOverlay>
     </LinkBox>
   );

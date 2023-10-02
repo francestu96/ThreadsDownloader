@@ -18,7 +18,7 @@ const Description = () => {
       <VStack w={'full'} p="10">
         <Stack textAlign="center">
           <Text fontWeight={800} fontSize={["md", "2xl", "5xl"]}>
-            Threads Downloader
+            ThreadsBro
           </Text>
           <Text fontWeight={700} fontSize={["sm", "xl", "2xl"]}>
             {t("HOME.HERO.TITLE")}
@@ -28,48 +28,48 @@ const Description = () => {
           <VStack _hover={{ boxShadow: "0px 0px 10px rgba(0,0,0,0.5);", cursor: "pointer"}} p="10">
             <TbFreeRights size={70}/>
             <Text fontSize={["sm", "md", "lg", "lg"]} fontWeight="600">
-             {t("HOME.DESCRIPTION.GRATIS")}
+             {t("HOME.DESCRIPTION.FREE")}
             </Text>
             <Text>
-              {t("HOME.DESCRIPTION.GRATIS-TEXT")}
+              {t("HOME.DESCRIPTION.FREE-TEXT")}
             </Text>
           </VStack>
           <VStack _hover={{ boxShadow: "0px 0px 10px rgba(0,0,0,0.5);", cursor: "pointer"}} p="10">
             <BsSpeedometer size={70}/>
             <Text fontSize={["sm", "md", "lg", "lg"]} fontWeight="600">
-              {t("HOME.DESCRIPTION.VELOCE")}
+              {t("HOME.DESCRIPTION.QUICK")}
             </Text>
             <Text>
-              {t("HOME.DESCRIPTION.VELOCE-TEXT")}
+              {t("HOME.DESCRIPTION.QUICK-TEXT")}
             </Text>
           </VStack>
           <VStack _hover={{ boxShadow: "0px 0px 10px rgba(0,0,0,0.5);", cursor: "pointer"}} p="10">
             <BsShieldFillCheck size={70}/>
             <Text fontSize={["sm", "md", "lg", "lg"]} fontWeight="600">
-            {t("HOME.DESCRIPTION.SICURO")}
+            {t("HOME.DESCRIPTION.SICURE")}
             </Text>
-            <Text>{t("HOME.DESCRIPTION.SICURO-TEXT")}</Text>
+            <Text>{t("HOME.DESCRIPTION.SICURE-TEXT")}</Text>
           </VStack>
           <VStack _hover={{ boxShadow: "0px 0px 10px rgba(0,0,0,0.5);", cursor: "pointer"}} p="10">
             <ImInfinite size={70}/>
             <Text fontSize={["sm", "md", "lg", "lg"]} fontWeight="600">
-            {t("HOME.DESCRIPTION.NESSUN-LIMITE")}
+            {t("HOME.DESCRIPTION.NO-LIMITS")}
             </Text>
-            <Text>{t("HOME.DESCRIPTION.NESSUN-LIMITE-TEXT")}</Text>
+            <Text>{t("HOME.DESCRIPTION.NO-LIMITS-TEXT")}</Text>
           </VStack>
           <VStack _hover={{ boxShadow: "0px 0px 10px rgba(0,0,0,0.5);", cursor: "pointer"}} p="10">
             < MdOutlineUnsubscribe size={70}/>
             <Text fontSize={["sm", "md", "lg", "lg"]} fontWeight="600">
-            {t("HOME.DESCRIPTION.NESSUNA-REGISTRAZIONE")}
+            {t("HOME.DESCRIPTION.NO-REGISTRATION")}
             </Text>
-            <Text>{t("HOME.DESCRIPTION.NESSUNA-REGISTRAZIONE-TEXT")}</Text>
+            <Text>{t("HOME.DESCRIPTION.NO-REGISTRATION-TEXT")}</Text>
           </VStack>
           <VStack _hover={{ boxShadow: "0px 0px 10px rgba(0,0,0,0.5);", cursor: "pointer"}} p="10">
             <LuMonitorSmartphone size={70}/>
             <Text fontSize={["sm", "md", "lg", "lg"]} fontWeight="600">
-            {t("HOME.DESCRIPTION.COMPATIBILE")}
+            {t("HOME.DESCRIPTION.COMPATIBLE")}
             </Text>
-            <Text>{t("HOME.DESCRIPTION.COMPATIBILE-TEXT")}</Text>
+            <Text>{t("HOME.DESCRIPTION.COMPATIBLE-TEXT")}</Text>
           </VStack>
         </SimpleGrid>
       </VStack>

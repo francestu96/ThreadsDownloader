@@ -33,7 +33,7 @@ const Header = () => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box borderBottom="1px" borderBottomColor="chakra-border-color" p='10px 20%'>
+    <Box borderBottom="1px" borderBottomColor="chakra-border-color" p={['10px 5%', '10px 10%', '10px 15%', '10px 20%']}>
       <Flex justify="space-between" display={['none', 'none', 'none','flex']}>
         <Logo />
         <HStack gap={'15px'} alignItems="center">

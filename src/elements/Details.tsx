@@ -12,28 +12,28 @@ const Details = () => {
         <Stack fontSize={["md", "lg", "xl", "xl"]}>
           <VStack mb="5" textAlign="center">
             <Text color="gray.700" fontWeight={500} fontSize={["xl", "xl", "2xl", "2xl"]}>
-            {t("HOME.DETAILS.BENVENUTI")}
+            {t("HOME.DETAILS.WELCOME")}
             </Text>
             <Text color="gray.700">
-            {t("HOME.DETAILS.BENVENUTI-TEXT")}
+            {t("HOME.DETAILS.WELCOME-TEXT")}
             </Text>
           </VStack>
           <VStack mb="5" alignItems="start">
             <Text color="gray.700" fontWeight={500}>
-            {t("HOME.DETAILS.COME-FARE")}
+            {t("HOME.DETAILS.HOW-TO")}
             </Text>
             <Text color="gray.700">
-            {t("HOME.DETAILS.COME-FARE-TEXT")}
+            {t("HOME.DETAILS.HOW-TO-TEXT")}
             </Text>
           </VStack>
           <VStack mb="5" alignItems="start">
             <Box color="gray.700" fontWeight={500}>
-            {t("HOME.DETAILS.COMODITA")}
+            {t("HOME.DETAILS.COMFORTABLE")}
               <Box boxSize={[10, 12, 15, 20]} float="left" margin="20px 20px 0px 20px">
                 <BsChatRightText size="auto" fill="#E53E3E"/>
               </Box>
               <Text color="gray.700" fontWeight={400}>
-              {t("HOME.DETAILS.COMODITA-TEXT")}
+              {t("HOME.DETAILS.COMFORTABLE-TEXT")}
               </Text>
             </Box>
           </VStack>

@@ -6,7 +6,7 @@ import Select, { StylesConfig, ValueContainerProps, components } from 'react-sel
 
 const styles: StylesConfig = {
   control: (base) => ({...base, cursor: "pointer", border: "none", boxShadow: 'none', gridArea: "unset", backgroundColor: "#1A202C"}),
-  valueContainer: (base) => ({...base, input: { height: "0" }})
+  valueContainer: (base) => ({...base, input: { height: "0" }, padding: "0"})
 }
 
 const ValueContainer = ({ children, ...props}: ValueContainerProps) => {
@@ -37,7 +37,7 @@ const LanguageSwitcher: React.FC = () => {
   return (
     <Select 
       value={{value: language}} 
-      components={{ValueContainer, Option: IconOption, DropdownIndicator:() => null, IndicatorSeparator:() => null }}
+      components={{ValueContainer, Option: IconOption, IndicatorSeparator:() => null }}
       isSearchable={false}
       styles={styles}
       options={locales.map((locale) => ({value: locale}))}

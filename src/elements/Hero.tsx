@@ -45,7 +45,7 @@ const Hero = () => {
       <VStack w={'full'} justifyContent="center" px={useBreakpointValue({ base: 4, md: 8 })} bgGradient={'linear(to-r, blackAlpha.600, transparent)'}>
         <Stack textAlign="center" width={["80%", "70%", "60%", "50%"]} bgColor="gray.200" p="7" borderRadius="lg">
           <Text color="gray.700" fontWeight={800} fontSize={["md", "2xl", "5xl"]}>
-            Threads Downloader
+            ThreadsBro
           </Text>
           <Text color="gray.700" fontWeight={700} fontSize={["sm", "xl", "2xl"]}>
             {t("HOME.HERO.TITLE")}

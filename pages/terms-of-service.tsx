@@ -9,7 +9,7 @@ const TermsOfServicePage: NextPage = () => {
   const { t } = useTranslation();
   
   return (
-    <Default pageName="ThreadsDownloader | Terms of Service">
+    <Default pageName="ThreadsBro | Terms of Service">
       <Flex justifyContent="center">
         <VStack w={["90%", "80%", "75%", "70%"]} p="10" alignItems="start">
           <Heading>
